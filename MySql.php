@@ -30,12 +30,14 @@ $conn=mysqli_connect($servername,$username, $password, $dbname);
             );
         }
         else{
-            $response = array(
+                  $response = array(
                 "status" => false,
                 "message" => "Something went wrong."
             );
         }
-    }else{
+    }
+    else
+    {
         $response = array(
             "status" => false,
             "message" => "Name, contact, email & city required."
